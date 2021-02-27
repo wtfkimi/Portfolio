@@ -1,0 +1,64 @@
+// main: ../style.less
+
+.footer {
+  background-color: @black;
+  padding: 1rem 1rem;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer__credits {
+  display: flex; /* В одну строку*/
+  align-items: center;
+}
+
+.footer__copyright {
+  padding-right: .8rem;
+  font-size: .94rem;
+  margin-right: 1rem;
+  color: #BBBBCC;
+  border-right: 1px solid rgba(@grey, 35%); /* Граница справа */
+}
+
+.footer__social {
+  display: flex;/* display flex + align intems center - выровнять по центру вертикали*/
+  align-items: center;
+  a {
+    margin-right: 1.2rem;
+    text-decoration: none;
+  }
+}
+
+.footer__nav {
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__nav-link {
+  margin-left: 1.5rem;
+  color: #BBBBCC;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &--btn {
+    padding: .5rem 1.4rem;
+    border: 1px solid @lightgrey;
+    border-radius: 20px;
+    line-height: 1.1;
+    transition: background-color .4s linear, color .4s linear,
+    border-color .4s linear;
+    &:hover {
+      text-decoration: none;
+      background-color: #BBBBCC;
+      border-color: #BBBBCC;
+      color: @black;
+    }
+
+  }
+}

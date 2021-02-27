@@ -1,0 +1,66 @@
+// compress: true
+
+@import "../vars";
+
+html {
+  font-size: 15px;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: @black;
+  &.no-scroll {
+    overflow: hidden; /* No scroll */
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box; /* Алгоритм подсчета размеров, все padding элементов будут идти во внутрь, не будет меняться размер блоков*/
+}
+
+/* Vendor */
+
+@import "../../vendor/slick";
+
+
+/* Blocks */
+@import "container";
+@import "header";
+@import "user";
+@import "nav";
+@import "intro";
+@import "social";
+@import "btn";
+@import "works";
+@import "portfolio";
+@import "work";
+@import "about";
+@import "reviews";
+@import "news";
+@import "articles";
+@import "footer";
+@import "modal";
+@import "modal-work";
+@import "timeline";
+@import "progress-bar";
+@import "contact";
+@import "form";
+@import "burger";
+
+
+
+
+/* Helpers */
+@import "helpers";
+
+
+

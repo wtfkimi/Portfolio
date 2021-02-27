@@ -1,0 +1,67 @@
+// main: ../style.less
+
+.btn {
+  display: inline-block; /* В ряд кнопки */
+  vertical-align: top;/* default styles */
+  font-size: 1.06rem;
+  border: 1px solid @grey; /* убераем рамку у кнопки */
+  border-radius: 1.8em;/* что бы величины зависили от размера шрифта кнопки*/
+  padding: 1.05em 1.7em;
+  background: none;
+  min-width: 170px;
+  //padding: 0; /* так как у <button> есть padding, сбрасываем на 0*/
+
+  cursor: pointer;
+  line-height: 1.1; /* величина пространства между строками */
+  font-family: inherit; /* будем наследовать у родилетя*/
+  font-weight: 400;
+  color: @grey;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  transition: background-color 0.4s linear,
+  color 0.4s linear,
+  box-shadow 0.2s linear,
+  border-color 0.2s linear;
+  &:hover {
+    background-color: @black;
+    box-shadow: 2px 2px 10px rgbs(#000, 20%); /*box shadow: x, y, размытие, цвет*/
+    color: @white;
+    border-color: @black;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  + .btn /* Если сделующий элемент кнопка ? */ {
+    margin-left: 1rem;
+  }
+
+  /* Modificators */
+
+  &--sm {
+    padding: 0.7em 1.1em;
+    font-size: 0.94rem;
+    font-weight: 700;
+    min-width: 0;
+    border-width: 2px;
+  }
+  &--bg {
+    border: 2px solid @grey; /* убераем рамку у кнопки */
+
+  }
+
+  &--thin {
+    min-width: 145px;
+    font-size: 0.8rem;
+
+  }
+
+  @media @tablet {
+    font-size: 1rem;
+    padding: 1em 1.5em;
+    min-width: 140px;
+  }
+
+}

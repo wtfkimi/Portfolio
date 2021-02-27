@@ -1,0 +1,62 @@
+// main: ../style.less
+
+
+.progress-bar__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: .3rem;
+}
+
+.progress-bar__title {
+  font-size: .94rem;
+  font-weight: 300;
+}
+
+.progress-bar__left {
+
+}
+
+.progress-bar__right {
+  padding-left: 1.2rem;
+}
+
+.progress-bar__bar {
+  width: 139px;
+  height: 6px;
+  margin-left: 1rem;
+  background-color: #EFEFEF;
+  &--db {
+    margin-left: 1.3rem;
+  }
+  &--html {
+    margin-left: .9rem;
+  }
+  &--git {
+    margin-left: 1.95rem;
+  }
+  &--selenium {
+    margin-left: 1.3rem;
+  }
+}
+
+.progress-bar__progress {
+  height: 100%;
+  background-color: #FF7474;
+  transition: width .2s linear;
+
+  &--html {
+    width: 85%;
+  }
+  &--javascript {
+    width: 90%;
+  }
+  &--db {
+    width: 70%;
+  }
+  &--git {
+    width: 95%;
+  }
+  &--selenium {
+    width: 93%;
+  }
+}
