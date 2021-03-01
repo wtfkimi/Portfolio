@@ -5,6 +5,11 @@
 .news {
   margin-top: 14rem;
   margin-bottom: 8rem;
+
+  @media @tablet {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+  }
 }
 
 
@@ -20,6 +25,10 @@
   font-weight: 700;
   color: @black;
   text-transform: uppercase;
+
+  @media @mobile {
+    font-size: 2rem;
+  }
 }
 
 
@@ -40,5 +49,9 @@
   font-size: .93rem;
   &:hover {
     text-decoration: none;
+  }
+  @media @mobile-sm {
+    display: block;
+    text-align: left;
   }
 }
