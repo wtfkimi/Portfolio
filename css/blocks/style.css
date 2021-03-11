@@ -332,7 +332,7 @@ p {
     height: 300px;
   }
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .intro__photo {
     display: none;
   }
@@ -372,7 +372,7 @@ p {
 .intro__content {
   width: 50%;
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .intro__content {
     width: 100%;
   }
@@ -459,7 +459,7 @@ p {
     min-width: 140px;
   }
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .btn {
     display: block;
     width: 100%;
@@ -469,10 +469,12 @@ p {
     margin-top: 1rem;
   }
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .btnModal__Resume {
+    display: inline-block;
     width: 50%;
     margin: auto;
+    font-size: 0.9rem;
   }
 }
 .works {
@@ -508,7 +510,7 @@ p {
     flex-basis: 50%;
   }
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .portfolio__col {
     flex-basis: 100%;
   }
@@ -528,7 +530,7 @@ p {
     max-width: 370px;
   }
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .work {
     margin: 0 auto;
   }
@@ -771,7 +773,7 @@ p {
 .news__link:hover {
   text-decoration: none;
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .news__link {
     display: block;
     text-align: left;
@@ -873,7 +875,7 @@ p {
     width: 100%;
   }
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .footer__credits {
     flex-direction: column;
   }
@@ -886,7 +888,7 @@ p {
   border-right: 1px solid rgba(106, 105, 107, 0.35);
   /* Граница справа */
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .footer__copyright {
     margin-right: 0;
     margin-bottom: 1rem;
@@ -1007,6 +1009,11 @@ p {
     font-size: 2rem;
   }
 }
+@media (max-width: 585px) {
+  .modal__title {
+    font-size: 1.4rem;
+  }
+}
 .modal__subtitle {
   text-transform: uppercase;
   font-size: 1.06rem;
@@ -1112,6 +1119,11 @@ p {
   top: 0;
   left: 50%;
 }
+@media (max-width: 585px) {
+  .timeline {
+    font-size: 0.8rem;
+  }
+}
 .timeline__item {
   margin-bottom: 2.3rem;
 }
@@ -1125,6 +1137,14 @@ p {
 .timeline__col--right {
   padding-left: 3.2rem;
 }
+@media (max-width: 585px) {
+  .timeline__col--left {
+    padding-right: 2rem;
+  }
+  .timeline__col--right {
+    padding-left: 2rem;
+  }
+}
 .timeline__title {
   margin-bottom: 2.6rem;
   font-size: 1.2rem;
@@ -1132,17 +1152,32 @@ p {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media (max-width: 585px) {
+  .timeline__title {
+    font-size: 1rem;
+  }
+}
 .timeline__date {
   font-size: 0.93rem;
   color: #2B2A2C;
   text-decoration: underline;
   margin-bottom: 0.8rem;
 }
+@media (max-width: 585px) {
+  .timeline__date {
+    font-size: 0.8rem;
+  }
+}
 .timeline__subtitle {
   font-size: 1.06rem;
   font-weight: 700;
   color: #2B2A2C;
   text-transform: uppercase;
+}
+@media (max-width: 585px) {
+  .timeline__subtitle {
+    font-size: 0.7rem;
+  }
 }
 .timeline__position {
   font-size: 0.93rem;
@@ -1157,10 +1192,21 @@ p {
 .timeline__position .timeline__link:hover {
   text-decoration: underline;
 }
+@media (max-width: 585px) {
+  .timeline__position .timeline__link {
+    font-size: 0.6rem;
+  }
+}
 .timeline__text {
   font-size: 0.8rem;
   line-height: 1.2rem;
   font-weight: 300;
+}
+@media (max-width: 585px) {
+  .timeline__text {
+    text-align: left;
+    font-size: 0.6rem;
+  }
 }
 .progress-bar__item {
   display: flex;
@@ -1197,7 +1243,7 @@ p {
     width: 95px;
   }
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .progress-bar__bar {
     width: 40px;
   }
@@ -1239,7 +1285,7 @@ p {
     background: url("../../images/onlymyphoto/photo_contact_sm.jpg") right center no-repeat;
   }
 }
-@media (max-width: 767px), (max-width: 565px) {
+@media (max-width: 767px), (max-width: 585px) {
   .contact {
     background: #E0FFFF;
   }
@@ -1248,7 +1294,7 @@ p {
   width: 47%;
   padding: 2rem;
 }
-@media (max-width: 767px), (max-width: 565px) {
+@media (max-width: 767px), (max-width: 585px) {
   .contact__left {
     width: 100%;
   }
@@ -1310,7 +1356,7 @@ p {
 .form__textarea::placeholder {
   color: #2B2A2C;
 }
-@media (max-width: 565px) {
+@media (max-width: 585px) {
   .form__input::placeholder,
   .form__textarea::placeholder {
     color: transparent;
