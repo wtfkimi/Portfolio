@@ -3,7 +3,23 @@
 
 
 .header {
- padding: 1.2rem 0;
+  //position: relative;
+  padding: 1.2rem 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  @media @mobile {
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
 }
 
 .header__inner {

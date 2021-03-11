@@ -2,7 +2,9 @@
 
 
 .intro {
-
+  @media @mobile {
+    margin-top: 80px;
+  }
 }
 
 .intro__inner {
@@ -17,6 +19,10 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-size: 350px auto;
+  }
+
+  @media @mobile {
+    background-size: 300px auto;
   }
 }
 
@@ -34,6 +40,10 @@
 
   @media @mobile-sm {
     display: none;
+  }
+
+  @media @mobile {
+    width: 300px;
   }
 }
 
@@ -70,5 +80,9 @@
 
   @media @mobile-sm {
     width: 100%;
+  }
+
+  @media @mobile {
+    width: 60%;
   }
 }

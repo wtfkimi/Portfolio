@@ -33,9 +33,19 @@
   &::placeholder{
     color: @black;
   }
+
+  @media @tablet {
+    width: 70%;
+  }
 }
 
 .form__textarea {
   height: 200px;
   resize: none; /*нельзя растягивать поле*/
+}
+
+
+.contact__left .btn {
+  display: block;
+  text-align: left;
 }
