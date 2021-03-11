@@ -37,6 +37,20 @@
   &--selenium {
     margin-left: 1.3rem;
   }
+
+  @media @mobile {
+    width: 95px;
+  }
+
+  @media @mobile-sm {
+    width: 40px;
+  }
+  @media @iphone5orSe {
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    background-color: #FFFFFF;
+  }
 }
 
 .progress-bar__progress {
@@ -59,4 +73,5 @@
   &--selenium {
     width: 93%;
   }
+
 }

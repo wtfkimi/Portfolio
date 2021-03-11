@@ -469,6 +469,12 @@ p {
     margin-top: 1rem;
   }
 }
+@media (max-width: 565px) {
+  .btnModal__Resume {
+    width: 50%;
+    margin: auto;
+  }
+}
 .works {
   margin: 2.8rem 0;
 }
@@ -1186,6 +1192,24 @@ p {
 .progress-bar__bar--selenium {
   margin-left: 1.3rem;
 }
+@media (max-width: 767px) {
+  .progress-bar__bar {
+    width: 95px;
+  }
+}
+@media (max-width: 565px) {
+  .progress-bar__bar {
+    width: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .progress-bar__bar {
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    background-color: #FFFFFF;
+  }
+}
 .progress-bar__progress {
   height: 100%;
   background-color: #FF7474;
@@ -1211,10 +1235,23 @@ p {
   background: url("../../images/onlymyphoto/photo_contact.jpg") right center no-repeat;
 }
 @media (max-width: 991px) {
+  .contact {
+    background: url("../../images/onlymyphoto/photo_contact_sm.jpg") right center no-repeat;
+  }
+}
+@media (max-width: 767px), (max-width: 565px) {
+  .contact {
+    background: #E0FFFF;
+  }
 }
 .contact__left {
   width: 47%;
   padding: 2rem;
+}
+@media (max-width: 767px), (max-width: 565px) {
+  .contact__left {
+    width: 100%;
+  }
 }
 .contact__info {
   margin: 2rem 0 3rem;
@@ -1272,6 +1309,12 @@ p {
 .form__input::placeholder,
 .form__textarea::placeholder {
   color: #2B2A2C;
+}
+@media (max-width: 565px) {
+  .form__input::placeholder,
+  .form__textarea::placeholder {
+    color: transparent;
+  }
 }
 @media (max-width: 991px) {
   .form__input,

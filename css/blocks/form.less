@@ -34,15 +34,23 @@
     color: @black;
   }
 
+  @media @mobile-sm {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
   @media @tablet {
     width: 70%;
   }
 }
 
+
 .form__textarea {
   height: 200px;
   resize: none; /*нельзя растягивать поле*/
 }
+
 
 
 .contact__left .btn {
